@@ -1,5 +1,5 @@
-var arrayData = JSON.parse(localStorage.getItem('account'));
-console.log(arrayData)
+// var arrayData = JSON.parse(localStorage.getItem('account'));
+
 document.getElementById('inputofemail').addEventListener('keydown',function(){
     document.getElementById('nodeofemail').innerHTML = null;
 });
@@ -13,10 +13,8 @@ let login = document.getElementById('btn-login');
 login.addEventListener('click',function(){
     let userEmail = document.getElementById('inputofemail').value;
     let userPassword = document.getElementById('inputofpassword').value;
-    // let arrayData = JSON.parse(localStorage.getItem('account'));
+    let arrayData = JSON.parse(localStorage.getItem('account'));
     console.log(arrayData);
-    // lay ten de show ra main_course
-   
    
     for(let i = 0;i<arrayData.length;i++){
         if(userEmail==arrayData[i].email && userPassword==arrayData[i].password){

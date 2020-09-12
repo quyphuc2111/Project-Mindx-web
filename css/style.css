@@ -25,7 +25,7 @@ body {
 #mainPage .itemnav {
     padding-right: 25px;
     padding-left: 25px;
-    color: white !important;
+    color: white;
 }
 #mainPage .itemnav:hover {
     color: black;
@@ -535,6 +535,7 @@ body {
     border: 1px solid white;
     border-style: dashed;
     border-bottom-color: black;
+   
 }
 #mainRegiter .node {
     width: 100%;
@@ -597,10 +598,10 @@ body {
 #mainCourse .itemnav {
     padding-right: 25px;
     padding-left: 25px;
-    color: white !important;
+    color: white;
 }
 #mainCourse .itemnav:hover {
-    color: black;
+   color: red;
 }
 #mainCourse .registerandlogin {
     height: 58px;
@@ -909,7 +910,7 @@ body {
  #detailCourse .itemnav {
     padding-right: 25px;
     padding-left: 25px;
-    color: white !important;
+    color: white;
  }
  #detailCourse .itemnav:hover {
     color: black;
@@ -997,12 +998,15 @@ body {
     height: 430px;
     /* border: 1px solid black; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
 }
 #detailCourse .groupTitle {
     cursor: pointer;
     padding-left: 25px;
-    text-align: center;
-    background-color: #ccc;
+    
+    background-color: #f7f8fa;
+    
+    border: 1px solid #dfe0e1;
     
 }
 #detailCourse .groupVideo {
@@ -1011,11 +1015,13 @@ body {
 #detailCourse .open {
     display: block;
 }
-#detailCourse #show ul {
+#detailCourse .groupVideo {
     
     height: 250px;
     overflow: scroll;
 }
+
+
 
    
 #detailCourse .title div {
@@ -1276,6 +1282,19 @@ body {
 }
 
 
+/* css course1 */
+#detailCourse .groupVideo_1 {
+    
+    height: auto;
+    /* overflow: scroll; */
+}
+
+#detailCourse .groupVideo_1 {
+       display: none;
+}
+#detailCourse .open {
+       display: block;
+}
 
  
  
