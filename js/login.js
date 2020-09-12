@@ -18,7 +18,6 @@ login.addEventListener('click',function(){
    
     for(let i = 0;i<arrayData.length;i++){
         if(userEmail==arrayData[i].email && userPassword==arrayData[i].password){
-            localStorage.setItem('name',JSON.stringify(arrayData[i].name));
             window.open('main_course.html','_self');
         }else if(userEmail!=arrayData[i].email){
             document.getElementById('nodeofemail').innerHTML = "Sai tên email";
