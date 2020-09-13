@@ -826,12 +826,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-/* suface duo */
-@media (min-width: 540px) and (max-width: 720px) {
-    #mainCourse .courseItem {
-        height: 500px;
-    }
-}
+
 
    /* tablet */
    @media (min-width: 724px) and (max-width: 1023px) {
@@ -919,6 +914,9 @@ body {
    
    }
    @media only screen and (max-width: 739px){
+    #mainCourse .courseItem {
+        height: 430px;
+    }
     #mainCourse  .courseSlideBar ul li {
        width: 220px;
         }
@@ -1015,6 +1013,13 @@ body {
         width: 100%;
     }
  }
+
+ /* suface duo */
+@media (min-width: 540px) and (max-width: 720px) {
+    #mainCourse .courseItem {
+        height: 500px;
+    }
+}
 
  /* css detai course */
 
