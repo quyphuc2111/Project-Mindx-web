@@ -1,10 +1,4 @@
-let account = [
-    {
-        name: 'Quý Phúc',
-        email: 'quyphuc211120@gmail.com',
-        password: '321',
-    },
-];
+let account = [];
 //thanh nhập tên
 let inputname = document.getElementById('inputofname');
 inputname.addEventListener('blur',function(){
@@ -35,6 +29,7 @@ inputpassword.addEventListener('blur',function(){
 inputpassword.addEventListener('keydown',function(){
     document.getElementById('nodeofpassword').innerHTML = null;
 });
+
 //đăng ký
 let register = document.getElementById('register');
 register.addEventListener('click',function(){
@@ -87,26 +82,14 @@ register.addEventListener('click',function(){
     passwordconfirm.addEventListener('keypress',function(){
         document.getElementById('nodeofpasswordconfirm').innerHTML = null;
     });
-   
-
-   console.log(conditions)
-
     if(conditions==4 && loginbyemail == true){
         let person = {
             name: inputname.value,
             email: inputemail.value,
-            password: passwordconfirm.value,
+            password: passwordconfirm.value
         }
         account.push(person);
-
-        // inputname.value = ''
-        // inputpassword.value = ''
-        // inputemail.value = ''
-        // passwordconfirm.value = ''
-        window.open('login.html','_self')
+        window.open('login.html','_self');
     }
-    
     localStorage.setItem('account',JSON.stringify(account));
-    console.log(account);
-   
 })

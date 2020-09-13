@@ -167,7 +167,29 @@ body {
 #mainPage .footer_5 {
     width: 25%;
     height: 100%;
+    text-align: center;
 }
+#mainPage .fb{
+    display: flex; 
+    flex-direction: column; 
+    
+   
+}
+
+#mainPage .fb a{
+    text-decoration: none;
+    color:#b9a079;
+    margin-top: 8px;
+   
+}
+#mainPage .fb a:first-child {
+    margin-top: 0;
+}
+#mainPage .fb a:hover{
+    color: whitesmoke;
+   
+}
+
 #mainPage .imgoffootter {
     width: 100%; 
 }
@@ -740,6 +762,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 500px;
+    margin-top: 50px;
 }
 #mainCourse .insidefooter {
     width: 100%;
