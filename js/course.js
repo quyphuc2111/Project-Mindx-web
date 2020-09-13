@@ -10,7 +10,7 @@ openVideo.addEventListener('click', function() {
 
 function check() {
     var totalCheckbox = document.querySelectorAll('input[type="checkbox"]:checked').length;
-    var a = document.querySelector('.groupTitle span').textContent = totalCheckbox + '/3';
+    var a = document.querySelector('.countCourse').textContent = totalCheckbox + '/3';
     console.log(a)
 }
 // console.log(showAndHideImg.textContent)
