@@ -75,4 +75,5 @@ function darkmode() {
         a=0;
     }
     console.log(a)
+    localStorage.setItem('darkmode',JSON.stringify(a));
 }

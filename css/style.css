@@ -834,6 +834,7 @@ body {
 }
 
 
+
    /* tablet */
    @media (min-width: 724px) and (max-width: 1023px) {
     #mainCourse .courseSlideBar ul li {
