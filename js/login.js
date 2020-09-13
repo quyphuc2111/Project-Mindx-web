@@ -12,7 +12,7 @@ login.addEventListener('click',function(){
     let userPassword = document.getElementById('inputofpassword').value;
     for(let i = 0;i<arrayData.length;i++){
         if(userEmail==arrayData[i].email && userPassword==arrayData[i].password){
-            window.open('main_course.html');
+            window.open('main_course.html','_self');
         }else if(userEmail!=arrayData[i].email){
             document.getElementById('nodeofemail').innerHTML = "Sai tên email";
         }else if(userPassword!=arrayData[i].password){
