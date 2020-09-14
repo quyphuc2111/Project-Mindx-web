@@ -109,15 +109,7 @@ var detailCourse = document.querySelector('#detailCourse');
 var groupTitle = document.querySelectorAll('.groupTitle');
 
 var heading = document.querySelector('#detailCourse .heading')
-if(darkmode == 1 ) {
-    heading.style.backgroundColor = '#404040';
-    detailCourse.parentElement.style.backgroundColor = '#202020';
-    detailCourse.parentElement.style.color = '#c6ba92';
-    groupTitle.forEach(function(item) {
-        item.style.backgroundColor = '#363636';
-    })
-    localStorage.setItem('darkmode','0');
-} else if (darkmode == 0) {
+if (darkmode == 0) {
     heading.style.backgroundColor = '#404040';
     detailCourse.parentElement.style.backgroundColor = 'white';
     detailCourse.parentElement.style.color = 'black';
@@ -125,5 +117,13 @@ if(darkmode == 1 ) {
         item.style.backgroundColor = '#f7f8fa';
     })
   
-    localStorage.setItem('darkmode','1');
+    darkmode = 1;
+} else {
+    heading.style.backgroundColor = '#404040';
+    detailCourse.parentElement.style.backgroundColor = '#202020';
+    detailCourse.parentElement.style.color = '#c6ba92';
+    groupTitle.forEach(function(item) {
+        item.style.backgroundColor = '#363636';
+    })
+    darkmode =0;
 }
