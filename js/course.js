@@ -77,7 +77,7 @@ if(darkmode == 1 ) {
     detailCourse.parentElement.style.color = '#c6ba92';
     groupTitle.style.backgroundColor = '#363636';
     localStorage.setItem('darkmode','0');
-} else if (darkmode == 0) {
+} else  {
     heading.style.backgroundColor = '#404040';
     detailCourse.parentElement.style.backgroundColor = 'white';
     detailCourse.parentElement.style.color = 'black';

@@ -1105,7 +1105,7 @@ body {
 }
 #detailCourse .RelatedVideo .video {
     width: 100%;
-    height: 430px;
+    height: 389px;
 }
 #detailCourse #active {
     display: block;
@@ -1256,6 +1256,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#detailCourse .scrolll {
+    overflow: scroll; 
+    height: 340px;
+}
 @media (min-width: 740px) and (max-width: 1023px) {
     #detailCourse  .left_column {
         height: 850px;
@@ -1366,6 +1371,7 @@ body {
 @media (max-width: 739px) {
     #detailCourse .right_column {
         margin-top: 20px;
+        height: 480px;
     }
 
     #detailCourse  .RelatedVideo {
@@ -1498,7 +1504,10 @@ body {
     #detailCourse .contentVideoo {
         padding-left: 8px;
     }
-    
+    #detailCourse .scrolll {
+        overflow: scroll; 
+        height: 450px;
+    }
 }
 
 
